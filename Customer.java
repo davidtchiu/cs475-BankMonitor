@@ -26,28 +26,8 @@ public class Customer implements Runnable {
      */
     @Override
     public void run() {
-        // try {
-        // while (true) {
-        // if (this.id == 0) {
-        // Thread.sleep(50);
-        // this.bank.deposit(this.id, 500);
-        // Thread.sleep(50);
-        // this.bank.deposit(this.id, 500);
-        // Thread.sleep(50);
-        // this.bank.deposit(this.id, 500);
-        // } else if (this.id == 1) {
-        // this.bank.withdraw(this.id, 600);
-        // } else {
-        // // Thread.sleep(5);
-        // this.bank.withdraw(this.id, 300);
-        // }
-        // }
-        // } catch (InterruptedException e) {
-        // System.out.println(e.toString());
-        // }
-
-        // cust 0 always deposits a small amount ($0 - $49)
-        // all other customers withdraw larger amounts ($100 - $499)
+        // cust 0 always deposits
+        // all other customers withdraw
         Random rng = new Random();
         while (true) {
             try {
